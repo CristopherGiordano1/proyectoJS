@@ -30,4 +30,29 @@ if  (tiempoCoccion === "si")(
     }
         else (alert ("todavía no están"))
 
+        console.log (i)
+
 }*/
+
+//Simulador interactivo
+
+let usuario = prompt("ingrese su usuario")
+
+while (usuario != "Cristopher"){
+    alert("ingrese nuevamente")
+
+    usuario = prompt("ingrese su usuario")
+ 
+}
+
+let contraseña = prompt("ingrese contraseña")
+
+while (contraseña != "Giordano") {
+
+alert("contraseña incorrecta")
+
+contraseña = prompt("ingrese contraseña") 
+
+}
+
+alert ("Bienvenido " + usuario) 
