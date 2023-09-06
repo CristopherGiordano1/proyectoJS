@@ -34,9 +34,9 @@ if  (tiempoCoccion === "si")(
 
 }*/
 
-//Simulador interactivo
+//Ejemplo
 
-let usuario = prompt("ingrese su usuario")
+/*let usuario = prompt("ingrese su usuario")
 
 while (usuario != "Cristopher"){
     alert("ingrese nuevamente")
@@ -55,4 +55,4 @@ contraseña = prompt("ingrese contraseña")
 
 }
 
-alert ("Bienvenido " + usuario) 
+alert ("Bienvenido " + usuario) */
