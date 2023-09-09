@@ -1,58 +1,28 @@
+alert("¡Bienvenido!")
 
-mostrarMensajeBienvenida();
+let cantidadMascotas = prompt("¿Cuántas mascotas tenes?");
 
-//Función para mostrar mensaje de bienvenida
 
-function mostrarMensajeBienvenida() {
-
-    alert("Bienvenido al simulador");
+if (cantidadMascotas >= 1){
+    console.log("Tengo " + cantidadMascotas + " mascota/s");
+}else if(cantidadMascotas < 1){ 
+    cantidadMascotas = prompt("¿Cuántas mascotas tenes?");
+    
 }
 
-let pregunta = (alert (""));opción
-let respuesta = parseInt(prompt("¿Qué opción elegis?\n1 Opción A\n2 Opción B\n3 Opción C"));
-let intentos = 3;
+let tipoMascota = (prompt("De qué raza es tu mascota? (Perro o gato)"));
+console.log("La raza de mi mascota es " + tipoMascota);
 
+let pesoMascota = (prompt("¿Cuál es el peso?"));
+console.log("Mi mascota pesa " + pesoMascota + " kilos");
 
-//Función para preguntar al usuario una pregunta y obtener su respuesta
+let gramosDia = parseInt(prompt("¿Cuántos gramos de alimento le das a tu mascota por día?"));
+console.log("Mi mascota come " + gramosDia + " gramos por día");
 
-function preguntarPregunta() {
+let pesoBolsa = parseFloat(prompt("¿De cuántos kilos es la bolsa de alimento balanceado que compraste?"))*1000;
+console.log("Compré una bolsa de " + pesoBolsa + " gramos");
 
-    intentos = 3;
-    respuesta;
-}
+let frecuenciaCompra = (pesoBolsa / gramosDia);
+console.log("El alimento te va a durar " + parseInt(frecuenciaCompra) + " días");
 
-//Permitir hasta 3 intentos
-
-while (intentos < 3){
-
-if (respuesta === "1"){
-    alert("Elegiste la Opción A");
-    break;
-}
-
-else if (respuesta === "2"){
-    alert("Elegiste la Opción B");
-    break;
-
-}
-
-else if (respuesta === "3"){
-    alert("Elegiste la Opción C");
-    break;
-
-}
-
-else {
-    alert("Respuesta no válida. Seleccioná 1, 2 o 3.");
-    intentos++;
-}
-
-if (intentos >= 3) {
-    alert("Superaste los intentos");
-
-}
-
-}
-
-
-preguntarPregunta();
+alert("La bosa te va a durar " + parseInt(pesoBolsa / gramosDia) + " días")
